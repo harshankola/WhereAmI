@@ -3,17 +3,20 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".WhereAmI" >
+    android:orientation="vertical" >
 
     <TextView
         android:id="@+id/myLocationText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/myMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="AIzaSyBIyJvULHXyqS1gDu6oNPtRJYfMV9bkt1U"
+        android:clickable="true"
+        android:enabled="true" />
 
 </LinearLayout>
